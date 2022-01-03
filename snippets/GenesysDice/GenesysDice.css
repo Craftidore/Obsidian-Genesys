@@ -12,7 +12,8 @@ settings:
 		default: false
 */
 
-/* Apllies to Everything */ 
+/* Applies to Everything */ 
+
 .tag[href^="#GenesysAbility"], .is-live-preview .cm-line:not(.cm-active) .cm-tag-GenesysAbility:not(.cm-formatting),
 .tag[href^="#GenesysBoost"], .is-live-preview .cm-line:not(.cm-active) .cm-tag-GenesysBoost:not(.cm-formatting),
 .tag[href^="#GenesysChallenge"], .is-live-preview .cm-line:not(.cm-active) .cm-tag-GenesysChallenge:not(.cm-formatting),
