@@ -26,6 +26,7 @@ settings:
 .tag[href^="#GenesysSuccess"], .is-live-preview .cm-line:not(.cm-active) .cm-tag-GenesysSuccess:not(.cm-formatting),
 .tag[href^="#GenesysThreat"], .is-live-preview .cm-line:not(.cm-active) .cm-tag-GenesysThreat:not(.cm-formatting),
 .tag[href^="#GenesysTriumph"], .is-live-preview .cm-line:not(.cm-active) .cm-tag-GenesysTriumph:not(.cm-formatting) {
+	/* Taken from original CSS */
 	display: inline-flex;
 	align-self: center;
 	top: .175em;
@@ -33,6 +34,10 @@ settings:
 	height: 1em;
 	width: 1em;
 	border: 0;
+	/* Added to try and deal with themes */
+	background-color: transparent;
+	font-size: var(--editor-font-size);
+	padding: 1px;
 }
 
 /* Because I don't want the `#` showing up in the tag */
@@ -58,8 +63,6 @@ settings:
 }
 
 .tag[href^="#GenesysBoost"], .is-live-preview .cm-line:not(.cm-active) .cm-tag-GenesysBoost:not(.cm-formatting) {
-	padding-right: 1px;
-	padding-left: 1px;
 	content: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4Ni4yNSA4Ni4yNSI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOiM4YmQ1ZmY7fTwvc3R5bGU+PC9kZWZzPjx0aXRsZT5ibHVlLWJsYW5rLWdlbjwvdGl0bGU+PGcgaWQ9IkxheWVyXzIiIGRhdGEtbmFtZT0iTGF5ZXIgMiI+PGcgaWQ9IkxheWVyXzEtMiIgZGF0YS1uYW1lPSJMYXllciAxIj48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik0yLjEsMEg4NC4xNWEyLjEsMi4xLDAsMCwxLDIuMSwyLjFWODQuMTVhMi4xLDIuMSwwLDAsMS0yLjEsMi4xSDIuMUEyLjEsMi4xLDAsMCwxLDAsODQuMTVWMi4xQTIuMSwyLjEsMCwwLDEsMi4xLDBaIi8+PC9nPjwvZz48L3N2Zz4=");
 }
 
