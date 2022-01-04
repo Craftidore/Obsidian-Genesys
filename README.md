@@ -4,13 +4,13 @@ Here is a compilation of various Obsidian tools useful for the Genesys RPG. At t
 
 ## Genesys Dice
 
-The Genesys Dice snippet converts tags like `#GenesysProficiency`, `#GenesysSuccess` to dice images in Obsidian. If you want to see it in action, [install the snippet]("#To Install"), then [put this md file in your vault](./examples/GenesysDiceExample.md). It should look like this screenshot:
+The Genesys Dice snippet converts tags like `#GenesysProficiency`, `#GenesysSuccess` to dice images in Obsidian. If you want to see it in action, <a href="#ToInstall">install</a> the snippet then [put this md file in your vault](./examples/GenesysDiceExample.md). It should look like this screenshot:
 
 <a href="./examples/GenesysDiceExample.md"><img src="./examples/GenesysDiceExample.png"></a>
 
 This snippet does have some slight support for the Style Settings community plugin, but is functional without it.
 
-### To Install
+<h3 id="ToInstall">To Install</h3>
 
 1. Copy paste [this snippet](./snippets/GenesysDice/GenesysDice.css) into the `.obsidian/snippets/` folder of your vault
 2. Navigate to `Settings` → `Appearance` → `Reload Snippets`, then enable the snippet.
