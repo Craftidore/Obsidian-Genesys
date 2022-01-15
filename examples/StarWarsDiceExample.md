@@ -1,5 +1,7 @@
 # StarWars Dice & Symbols for Obsidian
 
+/\*Current Problems: Boost & Setback don't look good with the outline. \*/
+
 I love the Gensys Narrative Dice System, but unlike normal dice, which are easily abreviated with `dXX`, there hasn't been a good way of referencing these dice in plaintext. 
 
 This CSS Snippet changes tags of the form `#StarWars<die or symbol name>` into the image of that die or symbol. In addition to adding pretty #StarWarsBoost NDS #StarWarsAbility symbols #StarWarsProficiency into your documents, this simplifies writing about Gensys because tags autocomplete.  

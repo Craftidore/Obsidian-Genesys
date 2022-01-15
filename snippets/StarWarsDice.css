@@ -51,7 +51,10 @@ settings:
 .is-live-preview .cm-line:not(.cm-active) .cm-formatting.cm-tag-StarWarsSuccess,
 .is-live-preview .cm-line:not(.cm-active) .cm-formatting.cm-tag-StarWarsThreat,
 .is-live-preview .cm-line:not(.cm-active) .cm-formatting.cm-tag-StarWarsTriumph,
-.is-live-preview .cm-line:not(.cm-active) .cm-formatting.cm-tag-StarWarsForce {
+.is-live-preview .cm-line:not(.cm-active) .cm-formatting.cm-tag-StarWarsForce,
+.is-live-preview .cm-line:not(.cm-active) .cm-formatting.cm-tag-StarWarsLightSide,
+.is-live-preview .cm-line:not(.cm-active) .cm-formatting.cm-tag-StarWarsDarkSide,
+.is-live-preview .cm-line:not(.cm-active) .cm-formatting.cm-tag-StarWarsLightDark {
 	display: none;
 }
 
@@ -127,15 +130,15 @@ settings:
 }
 
 /* Dark-theme fixes. Can be toggled off with Style Settings plugin */
-.theme-dark:not(.do-not-invert-symbols) .tag[href^="#StarWarsAdvantage"], .theme-dark:not(.do-not-invert-symbols) .is-live-preview .cm-line:not(.cm-active) .cm-tag-StarWarsAdvantage:not(.cm-formatting), 
-.theme-dark:not(.do-not-invert-symbols) .tag[href^="#StarWarsDespair"], .theme-dark:not(.do-not-invert-symbols) .is-live-preview .cm-line:not(.cm-active) .cm-tag-StarWarsDespair:not(.cm-formatting), 
-.theme-dark:not(.do-not-invert-symbols) .tag[href^="#StarWarsFailure"], .theme-dark:not(.do-not-invert-symbols) .is-live-preview .cm-line:not(.cm-active) .cm-tag-StarWarsFailure:not(.cm-formatting), 
-.theme-dark:not(.do-not-invert-symbols) .tag[href^="#StarWarsSuccess"], .theme-dark:not(.do-not-invert-symbols) .is-live-preview .cm-line:not(.cm-active) .cm-tag-StarWarsSuccess:not(.cm-formatting), 
-.theme-dark:not(.do-not-invert-symbols) .tag[href^="#StarWarsThreat"], .theme-dark:not(.do-not-invert-symbols) .is-live-preview .cm-line:not(.cm-active) .cm-tag-StarWarsThreat:not(.cm-formatting), 
-.theme-dark:not(.do-not-invert-symbols) .tag[href^="#StarWarsTriumph"], .theme-dark:not(.do-not-invert-symbols) .is-live-preview .cm-line:not(.cm-active) .cm-tag-StarWarsTriumph:not(.cm-formatting),
-.theme-dark:not(.do-not-invert-symbols) .tag[href^="#StarWarsLightSide"], .theme-dark:not(.do-not-invert-symbols) .is-live-preview .cm-line:not(.cm-active) .cm-tag-StarWarsLightSide:not(.cm-formatting),
-.theme-dark:not(.do-not-invert-symbols) .tag[href^="#StarWarsDarkSide"], .theme-dark:not(.do-not-invert-symbols) .is-live-preview .cm-line:not(.cm-active) .cm-tag-StarWarsDarkSide:not(.cm-formatting),
-.theme-dark:not(.do-not-invert-symbols) .tag[href^="#StarWarsLightDark"], .theme-dark:not(.do-not-invert-symbols) .is-live-preview .cm-line:not(.cm-active) .cm-tag-StarWarsLightDark:not(.cm-formatting) {
+.theme-dark:not(.do-not-invert-symbols-sw) .tag[href^="#StarWarsAdvantage"], .theme-dark:not(.do-not-invert-symbols-sw) .is-live-preview .cm-line:not(.cm-active) .cm-tag-StarWarsAdvantage:not(.cm-formatting), 
+.theme-dark:not(.do-not-invert-symbols-sw) .tag[href^="#StarWarsDespair"], .theme-dark:not(.do-not-invert-symbols-sw) .is-live-preview .cm-line:not(.cm-active) .cm-tag-StarWarsDespair:not(.cm-formatting), 
+.theme-dark:not(.do-not-invert-symbols-sw) .tag[href^="#StarWarsFailure"], .theme-dark:not(.do-not-invert-symbols-sw) .is-live-preview .cm-line:not(.cm-active) .cm-tag-StarWarsFailure:not(.cm-formatting), 
+.theme-dark:not(.do-not-invert-symbols-sw) .tag[href^="#StarWarsSuccess"], .theme-dark:not(.do-not-invert-symbols-sw) .is-live-preview .cm-line:not(.cm-active) .cm-tag-StarWarsSuccess:not(.cm-formatting), 
+.theme-dark:not(.do-not-invert-symbols-sw) .tag[href^="#StarWarsThreat"], .theme-dark:not(.do-not-invert-symbols-sw) .is-live-preview .cm-line:not(.cm-active) .cm-tag-StarWarsThreat:not(.cm-formatting), 
+.theme-dark:not(.do-not-invert-symbols-sw) .tag[href^="#StarWarsTriumph"], .theme-dark:not(.do-not-invert-symbols-sw) .is-live-preview .cm-line:not(.cm-active) .cm-tag-StarWarsTriumph:not(.cm-formatting),
+.theme-dark:not(.do-not-invert-symbols-sw) .tag[href^="#StarWarsLightSide"], .theme-dark:not(.do-not-invert-symbols-sw) .is-live-preview .cm-line:not(.cm-active) .cm-tag-StarWarsLightSide:not(.cm-formatting),
+.theme-dark:not(.do-not-invert-symbols-sw) .tag[href^="#StarWarsDarkSide"], .theme-dark:not(.do-not-invert-symbols-sw) .is-live-preview .cm-line:not(.cm-active) .cm-tag-StarWarsDarkSide:not(.cm-formatting),
+.theme-dark:not(.do-not-invert-symbols-sw) .tag[href^="#StarWarsLightDark"], .theme-dark:not(.do-not-invert-symbols-sw) .is-live-preview .cm-line:not(.cm-active) .cm-tag-StarWarsLightDark:not(.cm-formatting) {
 	filter: invert(1);
 }
 
