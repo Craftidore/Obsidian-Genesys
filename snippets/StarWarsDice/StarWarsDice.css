@@ -36,6 +36,10 @@ settings:
 	height: 1em;
 	width: 1em;
 	border: 0;
+	/* Added to try and deal with themes */
+	background-color: transparent;
+	font-size: var(--editor-font-size);
+	padding: 1px;
 }
 
 /* Because I don't want the `#` showing up in the tag */
