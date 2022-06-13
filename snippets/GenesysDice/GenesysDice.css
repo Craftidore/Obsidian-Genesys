@@ -124,11 +124,11 @@ body .tag[href^="#GenesysTriumph"], .is-live-preview .cm-line:not(.cm-active) .c
 A: make the square dice less flat-seeming 
 B: make sure the setback die can be seen in dark mode
 */
-.tag[href^="#GenesysSetback"], .is-live-preview .cm-line:not(.cm-active) .cm-tag-GenesysSetback:not(.cm-formatting) {
+body .tag[href^="#GenesysSetback"], .is-live-preview .cm-line:not(.cm-active) .cm-tag-GenesysSetback:not(.cm-formatting) {
 	background-color: #686868;
 	border-radius: 1px;
 }
-.tag[href^="#GenesysBoost"], .is-live-preview .cm-line:not(.cm-active) .cm-tag-GenesysBoost:not(.cm-formatting) {
+body .tag[href^="#GenesysBoost"], .is-live-preview .cm-line:not(.cm-active) .cm-tag-GenesysBoost:not(.cm-formatting) {
 	background-color: #989898;
 	border-radius: 1px;
 }
