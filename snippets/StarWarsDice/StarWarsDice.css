@@ -13,22 +13,22 @@ settings:
 */
 
 /* Applies to Everything */ 
-.tag[href^="#StarWarsAbility"], .is-live-preview .cm-line:not(.cm-active) .cm-tag-StarWarsAbility:not(.cm-formatting),
-.tag[href^="#StarWarsBoost"], .is-live-preview .cm-line:not(.cm-active) .cm-tag-StarWarsBoost:not(.cm-formatting),
-.tag[href^="#StarWarsChallenge"], .is-live-preview .cm-line:not(.cm-active) .cm-tag-StarWarsChallenge:not(.cm-formatting),
-.tag[href^="#StarWarsDifficulty"], .is-live-preview .cm-line:not(.cm-active) .cm-tag-StarWarsDifficulty:not(.cm-formatting),
-.tag[href^="#StarWarsProficiency"], .is-live-preview .cm-line:not(.cm-active) .cm-tag-StarWarsProficiency:not(.cm-formatting),
-.tag[href^="#StarWarsSetback"], .is-live-preview .cm-line:not(.cm-active) .cm-tag-StarWarsSetback:not(.cm-formatting),
-.tag[href^="#StarWarsAdvantage"], .is-live-preview .cm-line:not(.cm-active) .cm-tag-StarWarsAdvantage:not(.cm-formatting),
-.tag[href^="#StarWarsDespair"], .is-live-preview .cm-line:not(.cm-active) .cm-tag-StarWarsDespair:not(.cm-formatting),
-.tag[href^="#StarWarsFailure"], .is-live-preview .cm-line:not(.cm-active) .cm-tag-StarWarsFailure:not(.cm-formatting),
-.tag[href^="#StarWarsSuccess"], .is-live-preview .cm-line:not(.cm-active) .cm-tag-StarWarsSuccess:not(.cm-formatting),
-.tag[href^="#StarWarsThreat"], .is-live-preview .cm-line:not(.cm-active) .cm-tag-StarWarsThreat:not(.cm-formatting),
-.tag[href^="#StarWarsTriumph"], .is-live-preview .cm-line:not(.cm-active) .cm-tag-StarWarsTriumph:not(.cm-formatting),
-.tag[href^="#StarWarsForce"], .is-live-preview .cm-line:not(.cm-active) .cm-tag-StarWarsForce:not(.cm-formatting),
-.tag[href^="#StarWarsLightSide"], .is-live-preview .cm-line:not(.cm-active) .cm-tag-StarWarsLightSide:not(.cm-formatting),
-.tag[href^="#StarWarsDarkSide"], .is-live-preview .cm-line:not(.cm-active) .cm-tag-StarWarsDarkSide:not(.cm-formatting),
-.tag[href^="#StarWarsLightDark"], .is-live-preview .cm-line:not(.cm-active) .cm-tag-StarWarsLightDark:not(.cm-formatting) {
+body .tag[href^="#StarWarsAbility"], .is-live-preview .cm-line:not(.cm-active) .cm-tag-StarWarsAbility:not(.cm-formatting),
+body .tag[href^="#StarWarsBoost"], .is-live-preview .cm-line:not(.cm-active) .cm-tag-StarWarsBoost:not(.cm-formatting),
+body .tag[href^="#StarWarsChallenge"], .is-live-preview .cm-line:not(.cm-active) .cm-tag-StarWarsChallenge:not(.cm-formatting),
+body .tag[href^="#StarWarsDifficulty"], .is-live-preview .cm-line:not(.cm-active) .cm-tag-StarWarsDifficulty:not(.cm-formatting),
+body .tag[href^="#StarWarsProficiency"], .is-live-preview .cm-line:not(.cm-active) .cm-tag-StarWarsProficiency:not(.cm-formatting),
+body .tag[href^="#StarWarsSetback"], .is-live-preview .cm-line:not(.cm-active) .cm-tag-StarWarsSetback:not(.cm-formatting),
+body .tag[href^="#StarWarsAdvantage"], .is-live-preview .cm-line:not(.cm-active) .cm-tag-StarWarsAdvantage:not(.cm-formatting),
+body .tag[href^="#StarWarsDespair"], .is-live-preview .cm-line:not(.cm-active) .cm-tag-StarWarsDespair:not(.cm-formatting),
+body .tag[href^="#StarWarsFailure"], .is-live-preview .cm-line:not(.cm-active) .cm-tag-StarWarsFailure:not(.cm-formatting),
+body .tag[href^="#StarWarsSuccess"], .is-live-preview .cm-line:not(.cm-active) .cm-tag-StarWarsSuccess:not(.cm-formatting),
+body .tag[href^="#StarWarsThreat"], .is-live-preview .cm-line:not(.cm-active) .cm-tag-StarWarsThreat:not(.cm-formatting),
+body .tag[href^="#StarWarsTriumph"], .is-live-preview .cm-line:not(.cm-active) .cm-tag-StarWarsTriumph:not(.cm-formatting),
+body .tag[href^="#StarWarsForce"], .is-live-preview .cm-line:not(.cm-active) .cm-tag-StarWarsForce:not(.cm-formatting),
+body .tag[href^="#StarWarsLightSide"], .is-live-preview .cm-line:not(.cm-active) .cm-tag-StarWarsLightSide:not(.cm-formatting),
+body .tag[href^="#StarWarsDarkSide"], .is-live-preview .cm-line:not(.cm-active) .cm-tag-StarWarsDarkSide:not(.cm-formatting),
+body .tag[href^="#StarWarsLightDark"], .is-live-preview .cm-line:not(.cm-active) .cm-tag-StarWarsLightDark:not(.cm-formatting) {
 	display: inline-flex;
 	align-self: center;
 	top: .175em;
@@ -40,6 +40,7 @@ settings:
 	background-color: transparent;
 	font-size: var(--editor-font-size);
 	padding: 1px;
+	border-radius: 0;
 }
 
 /* Because I don't want the `#` showing up in the tag */

@@ -7,25 +7,25 @@ settings:
     - 
         id: do-not-invert-symbols
         title: "Don't Invert Symbols"
-		description: Don't invert the color of the symbols while in dark theme. 
+            description: Don't invert the color of the symbols while in dark theme. 
         type: class-toggle
-		default: false
+		    default: false
 */
 
 /* Applies to Everything */ 
 
-.tag[href^="#GenesysAbility"], .is-live-preview .cm-line:not(.cm-active) .cm-tag-GenesysAbility:not(.cm-formatting),
-.tag[href^="#GenesysBoost"], .is-live-preview .cm-line:not(.cm-active) .cm-tag-GenesysBoost:not(.cm-formatting),
-.tag[href^="#GenesysChallenge"], .is-live-preview .cm-line:not(.cm-active) .cm-tag-GenesysChallenge:not(.cm-formatting),
-.tag[href^="#GenesysDifficulty"], .is-live-preview .cm-line:not(.cm-active) .cm-tag-GenesysDifficulty:not(.cm-formatting),
-.tag[href^="#GenesysProficiency"], .is-live-preview .cm-line:not(.cm-active) .cm-tag-GenesysProficiency:not(.cm-formatting),
-.tag[href^="#GenesysSetback"], .is-live-preview .cm-line:not(.cm-active) .cm-tag-GenesysSetback:not(.cm-formatting),
-.tag[href^="#GenesysAdvantage"], .is-live-preview .cm-line:not(.cm-active) .cm-tag-GenesysAdvantage:not(.cm-formatting),
-.tag[href^="#GenesysDespair"], .is-live-preview .cm-line:not(.cm-active) .cm-tag-GenesysDespair:not(.cm-formatting),
-.tag[href^="#GenesysFailure"], .is-live-preview .cm-line:not(.cm-active) .cm-tag-GenesysFailure:not(.cm-formatting),
-.tag[href^="#GenesysSuccess"], .is-live-preview .cm-line:not(.cm-active) .cm-tag-GenesysSuccess:not(.cm-formatting),
-.tag[href^="#GenesysThreat"], .is-live-preview .cm-line:not(.cm-active) .cm-tag-GenesysThreat:not(.cm-formatting),
-.tag[href^="#GenesysTriumph"], .is-live-preview .cm-line:not(.cm-active) .cm-tag-GenesysTriumph:not(.cm-formatting) {
+body .tag[href^="#GenesysAbility"], .is-live-preview .cm-line:not(.cm-active) .cm-tag-GenesysAbility:not(.cm-formatting),
+body .tag[href^="#GenesysBoost"], .is-live-preview .cm-line:not(.cm-active) .cm-tag-GenesysBoost:not(.cm-formatting),
+body .tag[href^="#GenesysChallenge"], .is-live-preview .cm-line:not(.cm-active) .cm-tag-GenesysChallenge:not(.cm-formatting),
+body .tag[href^="#GenesysDifficulty"], .is-live-preview .cm-line:not(.cm-active) .cm-tag-GenesysDifficulty:not(.cm-formatting),
+body .tag[href^="#GenesysProficiency"], .is-live-preview .cm-line:not(.cm-active) .cm-tag-GenesysProficiency:not(.cm-formatting),
+body .tag[href^="#GenesysSetback"], .is-live-preview .cm-line:not(.cm-active) .cm-tag-GenesysSetback:not(.cm-formatting),
+body .tag[href^="#GenesysAdvantage"], .is-live-preview .cm-line:not(.cm-active) .cm-tag-GenesysAdvantage:not(.cm-formatting),
+body .tag[href^="#GenesysDespair"], .is-live-preview .cm-line:not(.cm-active) .cm-tag-GenesysDespair:not(.cm-formatting),
+body .tag[href^="#GenesysFailure"], .is-live-preview .cm-line:not(.cm-active) .cm-tag-GenesysFailure:not(.cm-formatting),
+body .tag[href^="#GenesysSuccess"], .is-live-preview .cm-line:not(.cm-active) .cm-tag-GenesysSuccess:not(.cm-formatting),
+body .tag[href^="#GenesysThreat"], .is-live-preview .cm-line:not(.cm-active) .cm-tag-GenesysThreat:not(.cm-formatting),
+body .tag[href^="#GenesysTriumph"], .is-live-preview .cm-line:not(.cm-active) .cm-tag-GenesysTriumph:not(.cm-formatting) {
 	/* Taken from original CSS */
 	display: inline-flex;
 	align-self: center;
@@ -38,6 +38,7 @@ settings:
 	background-color: transparent;
 	font-size: var(--editor-font-size);
 	padding: 1px;
+	border-radius: 0;
 }
 
 /* Because I don't want the `#` showing up in the tag */
