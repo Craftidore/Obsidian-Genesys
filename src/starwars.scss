@@ -1,0 +1,27 @@
+@use './variables.scss';
+@use './formatting.scss';
+@use './dice.scss';
+
+/** formatting stuff for Genesys **/
+
+@include formatting.formatting(Genesys);
+
+/** dice symbols definitions **/
+
+$Ability: "data:image/svg+xml;base64,Ability=";
+$Boost: "data:image/svg+xml;base64,Boost=";
+$Challenge: "data:image/svg+xml;base64,Challenge=";
+$Difficulty: "data:image/svg+xml;base64,Difficulty=";
+$Proficiency: "data:image/svg+xml;base64,Proficiency=";
+$Setback: "data:image/svg+xml;base64,Setback=";
+$Advantage: "data:image/svg+xml;base64,Advantage=";
+$Despair: "data:image/svg+xml;base64,Despaire=";
+$Failure: "data:image/svg+xml;base64,Failure=";
+$Success: "data:image/svg+xml;base64,Success=";
+$Threat: "data:image/svg+xml;base64,Threat=";
+$Triumph: "data:image/svg+xml;base64,Triumph=";
+/*** boilerplate to turn them into something workable ***/
+$dands: variables.$diceandsymbols;// I don't want to type variables.$diceandsymbols each time
+$dands_pics: (nth($dands, 1) $Ability, nth($dands, 2) $Boost, nth($dands, 3) $Challenge, nth($dands, 4) $Difficulty, nth($dands, 5) $Proficiency, nth($dands, 6) $Setback, nth($dands, 7) $Advantage, nth($dands, 8) $Despair, nth($dands, 9) $Failure, nth($dands, 10) $Success, nth($dands, 11) $Threat, nth($dands, 12) $Triumph);// don't you love boilerplate?
+
+@include dice.diceandsymbols(StarWars, $dands_pics);

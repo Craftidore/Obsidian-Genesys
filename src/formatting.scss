@@ -1,0 +1,25 @@
+@use './variables.scss';
+@mixin formatting($game) {
+    @each $dors in variables.$diceandsymbols {
+        body .tag[href^="#{$game$dors}"], 
+        #{variables.$lp} .cm-tag-#{$game$dors}:not(.cm-formatting) {
+            /* Taken from original CSS */
+            display: inline-flex;
+            align-self: center;
+            top: .175em;
+            position: relative;
+            height: 1em;
+            width: 1em;
+            border: 0;
+            /* Added to try and deal with themes */
+            background-color: transparent;
+            font-size: var(--editor-font-size);
+            padding: 1px;
+            border-radius: 0;
+            vertical-align: baseline;
+        }
+        #{variables.$lp} .cm-formatting.cm-tag#{$game$dors} {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,11 @@
+@use './variables';
+
+@mixin diceandsymbols($game, $diceandsymbols_pic_dict) {
+    //$dors = dice_or_symbol
+    @each $dors, $dors_pic in $diceandsymbols_pic_dict {
+        body .tag[href^="#{$game$dors}"], 
+        #{variables.$lp} .cm-tag-#{$game$dors}:not(.cm-formatting) {
+            content: url("#{$dors_pic}");
+        }
+    }
+}
