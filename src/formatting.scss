@@ -1,8 +1,9 @@
 @use './variables.scss';
+
 @mixin formatting($game) {
     @each $dors in variables.$diceandsymbols {
-        body .tag[href^="#{$game$dors}"], 
-        #{variables.$lp} .cm-tag-#{$game$dors}:not(.cm-formatting) {
+        body .tag[href^="##{$game}#{$dors}"], 
+        #{variables.$lp} .cm-tag-#{$game}#{$dors}:not(.cm-formatting) {
             /* Taken from original CSS */
             display: inline-flex;
             align-self: center;
@@ -18,8 +19,18 @@
             border-radius: 0;
             vertical-align: baseline;
         }
-        #{variables.$lp} .cm-formatting.cm-tag#{$game$dors} {
+        #{variables.$lp} .cm-formatting.cm-tag#{$game}#{$dors} {
             display: none;
+        }
+    }
+}
+@mixin darkthemefixes($game) {
+    @each $symbol in variables.$symbols {
+        .theme-dark:not(.do-not-invert-symbols-#{$game}) {
+            .tag[href^="##{$game}#{$symbol}"],
+            .is-live-preview .cm-line:not(.cm-active) .cm-tag-#{$game}#{$symbol}:not(.cm-formatting) {
+                filter: invert(1);
+            }
         }
     }
 }
