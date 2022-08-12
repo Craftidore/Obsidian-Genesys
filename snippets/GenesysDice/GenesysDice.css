@@ -329,8 +329,8 @@ body a.tag.tag[href^="#GenesysDarkSide"],
   display: none;
 }
 
-body a.tag.tag[href^="#GenesysLightDarkSide"],
-.is-live-preview .cm-line:not(.cm-active) .cm-tag-GenesysLightDarkSide:not(.cm-formatting) {
+body a.tag.tag[href^="#GenesysLightDark"],
+.is-live-preview .cm-line:not(.cm-active) .cm-tag-GenesysLightDark:not(.cm-formatting) {
   /* Taken from original CSS */
   display: inline-flex;
   align-self: center;
@@ -347,7 +347,7 @@ body a.tag.tag[href^="#GenesysLightDarkSide"],
   vertical-align: baseline;
 }
 
-.is-live-preview .cm-line:not(.cm-active) .cm-formatting.cm-tagGenesysLightDarkSide {
+.is-live-preview .cm-line:not(.cm-active) .cm-formatting.cm-tagGenesysLightDark {
   display: none;
 }
 
@@ -403,8 +403,8 @@ settings:
   filter: invert(1);
 }
 
-.theme-dark:not(.do-not-invert-symbols-Genesys) a.tag.tag[href^="#GenesysLightDarkSide"],
-.theme-dark:not(.do-not-invert-symbols-Genesys) .is-live-preview .cm-line:not(.cm-active) .cm-tag-GenesysLightDarkSide:not(.cm-formatting) {
+.theme-dark:not(.do-not-invert-symbols-Genesys) a.tag.tag[href^="#GenesysLightDark"],
+.theme-dark:not(.do-not-invert-symbols-Genesys) .is-live-preview .cm-line:not(.cm-active) .cm-tag-GenesysLightDark:not(.cm-formatting) {
   filter: invert(1);
 }
 
@@ -475,7 +475,7 @@ body .is-live-preview .cm-line:not(.cm-active) .cm-tag-GenesysSetback:not(.cm-fo
   display: none;
 }
 
-.is-live-preview .cm-line:not(.cm-active) .cm-tag-GenesysLightDarkSide {
+.is-live-preview .cm-line:not(.cm-active) .cm-tag-GenesysLightDark {
   display: none;
 }
 
@@ -557,8 +557,8 @@ body a.tag.tag[href^="#GenesysDarkSide"],
   content: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjAiIHk9IjAiIHdpZHRoPSIxMTAiIGhlaWdodD0iMTE1IiB2aWV3Qm94PSIwLCAwLCAxMTAsIDExNSI+CiAgPGcgaWQ9IkxheWVyXzIiPgogICAgPHBhdGggZD0iTTU1LDExMi41IEM4NS4zNzYsMTEyLjUgMTEwLDg3Ljg3NiAxMTAsNTcuNSBDMTEwLDI3LjEyNCA4NS4zNzYsMi41IDU1LDIuNSBDMjQuNjI0LDIuNSAwLDI3LjEyNCAwLDU3LjUgQzAsODcuODc2IDI0LjYyNCwxMTIuNSA1NSwxMTIuNSB6IiBmaWxsPSIjMDAwMDAwIi8+CiAgPC9nPgo8L3N2Zz4K");
 }
 
-body a.tag.tag[href^="#GenesysLightDarkSide"],
-.is-live-preview .cm-line:not(.cm-active) .cm-tag-GenesysLightDarkSide:not(.cm-formatting) {
+body a.tag.tag[href^="#GenesysLightDark"],
+.is-live-preview .cm-line:not(.cm-active) .cm-tag-GenesysLightDark:not(.cm-formatting) {
   content: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjAiIHk9IjAiIHdpZHRoPSIxMTAiIGhlaWdodD0iMTE1IiB2aWV3Qm94PSIwLCAwLCAxMTAsIDExNSI+CiAgPGcgaWQ9IkxheWVyXzIiPgogICAgPHBhdGggZD0iTTU1LDExMi41IEM4NS4zNzYsMTEyLjUgMTEwLDg3Ljg3NiAxMTAsNTcuNSBDMTEwLDI3LjEyNCA4NS4zNzYsMi41IDU1LDIuNSBDMjQuNjI0LDIuNSAwLDI3LjEyNCAwLDU3LjUgQzAsODcuODc2IDI0LjYyNCwxMTIuNSA1NSwxMTIuNSB6IE01NC44NjcsMTAxLjYxMiBDMzAuNTY2LDEwMS42MTIgMTEsODEuODAxIDExLDU3LjUgQzExLDMzLjE5OSAzMC42OTksMTMuNSA1NSwxMy41IEM1NS4wMzMsMTMuNTkyIDU0LjcwMSwxMDEuNjEyIDU0Ljg2NywxMDEuNjEyIHoiIGZpbGw9IiMwMDAwMDAiLz4KICA8L2c+Cjwvc3ZnPgo=");
 }
 
