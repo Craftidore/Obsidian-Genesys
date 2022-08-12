@@ -263,6 +263,28 @@ body a.tag.tag[href^="#GenesysTriumph"],
   display: none;
 }
 
+body a.tag.tag[href^="#GenesysForce"],
+.is-live-preview .cm-line:not(.cm-active) .cm-tag-GenesysForce:not(.cm-formatting) {
+  /* Taken from original CSS */
+  display: inline-flex;
+  align-self: center;
+  top: 0.175em;
+  position: relative;
+  height: 1em;
+  width: 1em;
+  border: 0;
+  /* Added to try and deal with themes */
+  background-color: transparent;
+  font-size: var(--editor-font-size);
+  padding: 1px;
+  border-radius: 0;
+  vertical-align: baseline;
+}
+
+.is-live-preview .cm-line:not(.cm-active) .cm-formatting.cm-tagGenesysForce {
+  display: none;
+}
+
 body a.tag.tag[href^="#GenesysLightSide"],
 .is-live-preview .cm-line:not(.cm-active) .cm-tag-GenesysLightSide:not(.cm-formatting) {
   /* Taken from original CSS */
@@ -441,6 +463,10 @@ body .is-live-preview .cm-line:not(.cm-active) .cm-tag-GenesysSetback:not(.cm-fo
   display: none;
 }
 
+.is-live-preview .cm-line:not(.cm-active) .cm-tag-GenesysForce {
+  display: none;
+}
+
 .is-live-preview .cm-line:not(.cm-active) .cm-tag-GenesysLightSide {
   display: none;
 }
@@ -514,6 +540,11 @@ body a.tag.tag[href^="#GenesysThreat"],
 body a.tag.tag[href^="#GenesysTriumph"],
 .is-live-preview .cm-line:not(.cm-active) .cm-tag-GenesysTriumph:not(.cm-formatting) {
   content: url("data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjE1MHB4IiBoZWlnaHQ9IjE1MHB4IiB2aWV3Qm94PSIwIDAgMTUwMCAxNTAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCBtZWV0Ij4KPGcgaWQ9ImxheWVyMSIgZmlsbD0iIzAwMDAwMCIgc3Ryb2tlPSJub25lIj4KIDxwYXRoIGQ9Ik02MDUgMTQ3NiBjLTE1OCAtMzIgLTI3MiAtOTIgLTM4NSAtMjA2IC05NiAtOTYgLTE0OCAtMTc4IC0xODcgLTI5NSAtMjUgLTcyIC0yNyAtOTQgLTI4IC0yMzAgMCAtMTMxIDMgLTE1OSAyMyAtMjIwIDgzIC0yNDcgMjU1IC00MTkgNDk3IC00OTUgMTA3IC0zNCAyNzQgLTM4IDM4OCAtMTEgNDM0IDEwNCA2NzYgNTQ3IDUzMSA5NzMgLTc3IDIyOCAtMjc4IDQxMyAtNTEyIDQ3MyAtODkgMjIgLTI0MiAyOCAtMzI3IDExeiBtOTAgLTE1MyBjLTEwIC00MSAtNjkgLTE2NSAtOTIgLTE5MiBsLTE5IC0yNCAtNjAgMTggYy02OCAxOSAtMTc0IDY1IC0xNzQgNzQgMCA0IDI4IDI1IDYzIDQ4IDYxIDQwIDE0NSA3NSAyMjIgOTIgNjUgMTUgNjggMTQgNjAgLTE2eiBtMjI1IC0zIGM2MiAtMTggMTY4IC03NCAyMDAgLTEwNiAxMyAtMTMgMTMgLTE2IDAgLTI0IC0zOCAtMjQgLTE2NCAtNzEgLTE5NiAtNzMgLTM1IC0yIC0zOCAxIC03MCA1OCAtMTkgMzMgLTQzIDg2IC01MyAxMTggbC0yMCA1OCAzNyAtNiBjMjAgLTQgNjYgLTE1IDEwMiAtMjV6IG0tNTgyIC0yOTQgYzUyIC0xNDUgNTcgLTEyOCAtNjAgLTE4NiAtMTQ3IC03MSAtMTUyIC02OSAtMTIzIDQ1IDIwIDc2IDU1IDE1MyA5NyAyMTEgMzkgNTUgNDMgNTIgODYgLTcweiBtOTQ3IC0yMSBjMjkgLTYxIDM4IC05NCA2MSAtMjAyIGw0IC0yMyAtNjMgMjQgYy02OSAyNiAtMTMxIDU2IC0xNjEgNzkgLTE3IDEzIC0xOCAxOCAtNyA2MyA3IDI3IDI2IDgyIDQzIDEyMyBsMzEgNzUgMjkgLTM1IGMxNiAtMTkgNDQgLTY1IDYzIC0xMDR6IG0tNDgwIC01NiBjMjUgLTcgNTggLTI5IDg2IC01OCA3OSAtNzggODggLTE3NSAyNiAtMjY4IC0xMTcgLTE3MiAtMzg4IC04OSAtMzg3IDExOSAwIDY3IDI3IDEyNyA3NCAxNjQgNjMgNTEgMTI1IDY0IDIwMSA0M3ogbS01NjUgLTI4MyBjMzAgLTEzIDc0IC0zNCA5NyAtNDkgbDQxIC0yNiAtMTUgLTU4IGMtOCAtMzEgLTI4IC04NyAtNDUgLTEyMyBsLTI5IC02NSAtMjUgMzAgYy01NiA2NyAtMTI0IDIzNSAtMTI0IDMwNSAwIDI0IDYgMjMgMTAwIC0xNHogbTEwOTkgLTE3IGMtMTAgLTYxIC0yNSAtMTEwIC01MSAtMTY0IC0yMyAtNDggLTgxIC0xMzUgLTg5IC0xMzUgLTE0IDAgLTg5IDE5NCAtODkgMjMxIDAgMTcgMTAwIDc1IDE3NyAxMDQgNjAgMjIgNjEgMjEgNTIgLTM2eiBtLTcxOCAtMzIwIGMzMiAtNTYgODIgLTE3OSA3NSAtMTg2IC0yMiAtMjMgLTI1MSA2MyAtMzIxIDEyMCBsLTI5IDI0IDQ0IDIzIGM1MiAyNyAxODAgNzAgMTk1IDY2IDUgLTEgMjEgLTIzIDM2IC00N3ogbTM2OSAyMyBjMjUgLTggNzAgLTI1IDk5IC0zOSBsNTUgLTI0IC01MCAtMzUgYy03OSAtNTggLTIyNCAtMTE0IC0yOTMgLTExNCAtMjEgMCAtMjEgMCA0IDY2IDEzIDM2IDM5IDg5IDU3IDExOSAzNiA2MCAzMiA1OSAxMjggMjd6Ii8+CiA8L2c+Cgo8L3N2Zz4=");
+}
+
+body a.tag.tag[href^="#GenesysForce"],
+.is-live-preview .cm-line:not(.cm-active) .cm-tag-GenesysForce:not(.cm-formatting) {
+  content: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjAiIHk9IjAiIHdpZHRoPSIxMTAiIGhlaWdodD0iMTE1IiB2aWV3Qm94PSIwLCAwLCAxMTAsIDExNSI+CiAgPGcgaWQ9IkxheWVyXzEiPgogICAgPHBhdGggZD0iTTAuMzEsMzkuNzMgTDIxLjIsMTEgTDU1LDAgTDg4LjgsMTEgTDEwOS42OSwzOS43NSBMMTA5LjY5LDc1LjI3IEw4OC44LDEwNCBMNTUsMTE1IEwyMS4yLDEwNCBMMC4zMSw3NS4yNyB6IiBmaWxsPSIjRTlFOUU5Ii8+CiAgICA8cGF0aCBkPSJNOTYuNDYsNDQuMDMgTDEwOS42OSwzOS43MyBMODguOCwxMC45OCBMNTUsMCBMNTUsMTMuOTEgTDk2LjQ2LDQ0LjAzIHoiIGZpbGw9IiMwMDAwMDAiIG9wYWNpdHk9IjAuMTgiLz4KICAgIDxwYXRoIGQ9Ik01NSwxMy45MSBMNTUsMCBMMjEuMiwxMC45OCBMMC4zMSwzOS43MyBMMTMuNTQsNDQuMDMgTDU1LDEzLjkxIHoiIGZpbGw9IiMwMDAwMDAiIG9wYWNpdHk9IjAuMTgiLz4KICAgIDxwYXRoIGQ9Ik0xMy41NCw0NC4wMyBMMC4zMSwzOS43MyBMMC4zMiw3NS4yNyBMMjEuMiwxMDQuMDIgTDI5LjM4LDkyLjc3IEwxMy41NCw0NC4wMyB6IiBmaWxsPSIjMDAwMDAwIiBvcGFjaXR5PSIwLjEiLz4KICAgIDxwYXRoIGQ9Ik0yOS4zOCw5Mi43NyBMMjEuMiwxMDQuMDIgTDU1LDExNSBMODguOCwxMDQuMDIgTDgwLjYyLDkyLjc3IEwyOS4zOCw5Mi43NyB6IiBmaWxsPSIjMDAwMDAwIiBvcGFjaXR5PSIwLjI4Ii8+CiAgICA8cGF0aCBkPSJNODAuNjIsOTIuNzcgTDg4LjgsMTA0LjAyIEwxMDkuNjksNzUuMjcgTDEwOS42OSwzOS43MyBMOTYuNDYsNDQuMDMgTDgwLjYyLDkyLjc3IHoiIGZpbGw9IiMwMDAwMDAiIG9wYWNpdHk9IjAuMSIvPgogIDwvZz4KPC9zdmc+Cg==");
 }
 
 body a.tag.tag[href^="#GenesysLightSide"],

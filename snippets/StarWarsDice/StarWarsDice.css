@@ -263,6 +263,28 @@ body a.tag.tag[href^="#StarWarsTriumph"],
   display: none;
 }
 
+body a.tag.tag[href^="#StarWarsForce"],
+.is-live-preview .cm-line:not(.cm-active) .cm-tag-StarWarsForce:not(.cm-formatting) {
+  /* Taken from original CSS */
+  display: inline-flex;
+  align-self: center;
+  top: 0.175em;
+  position: relative;
+  height: 1em;
+  width: 1em;
+  border: 0;
+  /* Added to try and deal with themes */
+  background-color: transparent;
+  font-size: var(--editor-font-size);
+  padding: 1px;
+  border-radius: 0;
+  vertical-align: baseline;
+}
+
+.is-live-preview .cm-line:not(.cm-active) .cm-formatting.cm-tagStarWarsForce {
+  display: none;
+}
+
 body a.tag.tag[href^="#StarWarsLightSide"],
 .is-live-preview .cm-line:not(.cm-active) .cm-tag-StarWarsLightSide:not(.cm-formatting) {
   /* Taken from original CSS */
@@ -441,6 +463,10 @@ body .is-live-preview .cm-line:not(.cm-active) .cm-tag-StarWarsSetback:not(.cm-f
   display: none;
 }
 
+.is-live-preview .cm-line:not(.cm-active) .cm-tag-StarWarsForce {
+  display: none;
+}
+
 .is-live-preview .cm-line:not(.cm-active) .cm-tag-StarWarsLightSide {
   display: none;
 }
@@ -514,6 +540,11 @@ body a.tag.tag[href^="#StarWarsThreat"],
 body a.tag.tag[href^="#StarWarsTriumph"],
 .is-live-preview .cm-line:not(.cm-active) .cm-tag-StarWarsTriumph:not(.cm-formatting) {
   content: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjAiIHk9IjAiIHdpZHRoPSIxMTAiIGhlaWdodD0iMTE1IiB2aWV3Qm94PSIwLCAwLCAxMTAsIDExNSI+CiAgPGcgaWQ9IkxheWVyXzEiPgogICAgPHBhdGggZD0iTTk2Ljc3LDc3LjYzIEwxMDQuMzQsNzcuMDEgTDk3LjM0LDc2LjAxIEM5OC43NzYsNzEuNTg1IDk5LjUwNSw2Ni45NjIgOTkuNSw2Mi4zMSBDOTkuMzcsMzguNjY4IDgwLjkyOSwxOS4xNzcgNTcuMzMsMTcuNzQgTDU2Ljc0LDAgTDUyLjE4LDAgTDUxLjU4LDE3LjczIEMyOC4zNDMsMTkuMTQ0IDEwLjA5MiwzOC4xNzQgOS42NSw2MS40NSBDOS4yMDgsODQuNzI1IDI2LjcyNCwxMDQuNDM1IDQ5Ljg5LDEwNi43MyBMNDkuODksMTE1IEw1OSwxMTIuNDEgTDU5LDEwNi43NiBDNjUuMzk4LDEwNi4xMTMgNzEuNTgzLDEwNC4xMDUgNzcuMTQsMTAwLjg3IEw4Mi45NCwxMDUuODcgTDc4LjY4LDk5Ljg3IEM4Ni45Nyw5NC42MjMgOTMuMzIxLDg2LjgxNSA5Ni43Nyw3Ny42MyB6IE03MS42OSwyNy41IEM3Ni4wMDYsMjkuNTMyIDc5Ljg4MiwzMi4zODkgODMuMSwzNS45MSBDODYuMzQ0LDM5LjM4NyA4OC45MTQsNDMuNDM1IDkwLjY4LDQ3Ljg1IEM5Mi41NjMsNTIuNDIzIDkzLjUxNSw1Ny4zMjUgOTMuNDgsNjIuMjcgQzkzLjUxNCw2Ni42MTggOTIuNzQxLDcwLjkzNCA5MS4yLDc1IEw2NC41Myw3MC42OCBMNzkuNDcsNDkuNTEgTDU5LjEzLDY0LjQ1IEw1Ny41NywyMy42NiBDNjIuNDgsMjQuMDIxIDY3LjI3NCwyNS4zMjUgNzEuNjksMjcuNSB6IE02NC4xMSw4MC4zMyBMOTAuMTEsNzguMjYgQzg4LjU0OSw4MS43NTIgODYuNDQ3LDg0Ljk3NSA4My44OCw4Ny44MSBDODEuMzgyLDkwLjY5OSA3OC40ODMsOTMuMjE1IDc1LjI3LDk1LjI4IHogTTcyLjExLDk2Ljk0IEM3MC4wOTQsOTguMDE4IDY3Ljk3Myw5OC44ODYgNjUuNzgsOTkuNTMgQzYzLjU3MSwxMDAuMjMzIDYxLjMwMSwxMDAuNzI1IDU5LDEwMSBMNTksODYuODcgeiBNNDQuNiw3Ni40OSBMMzQuMzIsOTEuMjMgTDQ5LjMyLDgzLjU1IEw0OS44NCw4NS44MyBMNDkuODQsMTAxIEM0NS4xNzUsMTAwLjM4IDQwLjY1OCw5OC45MzQgMzYuNSw5Ni43MyBDMzIuMzg1LDk0LjYxOCAyOC42OTEsOTEuNzcxIDI1LjYsODguMzMgQzIyLjUsODQuODA2IDIwLjA0Miw4MC43NjQgMTguMzQsNzYuMzkgQzE0LjcxOSw2Ny4yNjYgMTQuNzU1LDU3LjA5OCAxOC40NCw0OCBDMjAuMjMzLDQzLjU1OCAyMi44MzgsMzkuNDg5IDI2LjEyLDM2IEMyOS4zMTEsMzIuNTExIDMzLjExLDI5LjYzMSAzNy4zMywyNy41IEM0MS43MDksMjUuMzQgNDYuNDYxLDI0LjAzNyA1MS4zMywyMy42NiBMNDkuNjgsNjguMTkgTDIwLjkzLDYwLjUxIHoiIGZpbGw9IiMwMDAwMDAiLz4KICA8L2c+Cjwvc3ZnPgo=");
+}
+
+body a.tag.tag[href^="#StarWarsForce"],
+.is-live-preview .cm-line:not(.cm-active) .cm-tag-StarWarsForce:not(.cm-formatting) {
+  content: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjAiIHk9IjAiIHdpZHRoPSIxMTAiIGhlaWdodD0iMTE1IiB2aWV3Qm94PSIwLCAwLCAxMTAsIDExNSI+CiAgPGcgaWQ9IkxheWVyXzEiPgogICAgPHBhdGggZD0iTTAuMzEsMzkuNzMgTDIxLjIsMTEgTDU1LDAgTDg4LjgsMTEgTDEwOS42OSwzOS43NSBMMTA5LjY5LDc1LjI3IEw4OC44LDEwNCBMNTUsMTE1IEwyMS4yLDEwNCBMMC4zMSw3NS4yNyB6IiBmaWxsPSIjRTlFOUU5Ii8+CiAgICA8cGF0aCBkPSJNOTYuNDYsNDQuMDMgTDEwOS42OSwzOS43MyBMODguOCwxMC45OCBMNTUsMCBMNTUsMTMuOTEgTDk2LjQ2LDQ0LjAzIHoiIGZpbGw9IiMwMDAwMDAiIG9wYWNpdHk9IjAuMTgiLz4KICAgIDxwYXRoIGQ9Ik01NSwxMy45MSBMNTUsMCBMMjEuMiwxMC45OCBMMC4zMSwzOS43MyBMMTMuNTQsNDQuMDMgTDU1LDEzLjkxIHoiIGZpbGw9IiMwMDAwMDAiIG9wYWNpdHk9IjAuMTgiLz4KICAgIDxwYXRoIGQ9Ik0xMy41NCw0NC4wMyBMMC4zMSwzOS43MyBMMC4zMiw3NS4yNyBMMjEuMiwxMDQuMDIgTDI5LjM4LDkyLjc3IEwxMy41NCw0NC4wMyB6IiBmaWxsPSIjMDAwMDAwIiBvcGFjaXR5PSIwLjEiLz4KICAgIDxwYXRoIGQ9Ik0yOS4zOCw5Mi43NyBMMjEuMiwxMDQuMDIgTDU1LDExNSBMODguOCwxMDQuMDIgTDgwLjYyLDkyLjc3IEwyOS4zOCw5Mi43NyB6IiBmaWxsPSIjMDAwMDAwIiBvcGFjaXR5PSIwLjI4Ii8+CiAgICA8cGF0aCBkPSJNODAuNjIsOTIuNzcgTDg4LjgsMTA0LjAyIEwxMDkuNjksNzUuMjcgTDEwOS42OSwzOS43MyBMOTYuNDYsNDQuMDMgTDgwLjYyLDkyLjc3IHoiIGZpbGw9IiMwMDAwMDAiIG9wYWNpdHk9IjAuMSIvPgogIDwvZz4KPC9zdmc+Cg==");
 }
 
 body a.tag.tag[href^="#StarWarsLightSide"],
