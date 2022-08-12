@@ -24,7 +24,7 @@ settings:
 /** Misc Fixes **/
 
 // setback doesn't display well in dark mode, so adding a border
-html body .tag[href^="#GenesysSetback"],
+html body a.tag.tag[href^="#GenesysSetback"],
 body #{variables.$lp} .cm-tag-GenesysSetback:not(.cm-formatting) {
     padding: 1px;
     background-color: #fff;

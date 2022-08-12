@@ -2,7 +2,7 @@
 
 @mixin formatting($game) {
     @each $dors in variables.$diceandsymbols {
-        body .tag[href^="##{$game}#{$dors}"], 
+        body a.tag.tag[href^="##{$game}#{$dors}"], 
         #{variables.$lp} .cm-tag-#{$game}#{$dors}:not(.cm-formatting) {
             /* Taken from original CSS */
             display: inline-flex;
@@ -27,7 +27,7 @@
 @mixin darkthemefixes($game) {
     @each $symbol in variables.$symbols {
         .theme-dark:not(.do-not-invert-symbols-#{$game}) {
-            .tag[href^="##{$game}#{$symbol}"],
+            a.tag.tag[href^="##{$game}#{$symbol}"],
             .is-live-preview .cm-line:not(.cm-active) .cm-tag-#{$game}#{$symbol}:not(.cm-formatting) {
                 filter: invert(1);
             }
