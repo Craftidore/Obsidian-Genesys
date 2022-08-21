@@ -9,7 +9,7 @@ If you have something else to add, please make a pull request adding the code an
 The Star Wars and Genesys Dice snippets convert tags like `#StarWarsProficiency`/`#GenesysProficiency`, `#StarWarsSuccess`/`#GenesysSuccess` to dice images in Obsidian. 
 If you want to see it in action, <a href="https://github.com/Craftidore/Obsidian-Genesys/tree/master/Dice-Snippets#to-install">install</a> the snippet.
 
-<a href="./examples/GenesysDiceExample.md"><img src="./examples/GenesysDiceExample.png"></a>
+<a href="./Dice-Snippets/examples/GenesysDiceExample.md"><img src="./examples/GenesysDiceExample.png"></a>
 
 ## Star Wars and Genesys TTRPG Statblock Layout
 
