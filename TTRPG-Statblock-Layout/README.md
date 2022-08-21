@@ -70,3 +70,15 @@ equipment:
     desc: Utility belt, Extra reloads, Stormtrooper armor, 2 frag grenades
 ```
 ````
+
+## Editing Skills
+Using the inbuilt TTRPG Statblock layout editor, all aspects of the layout can be adjusted, including skills. Currently, the dice pool calculations use parallel arrays, and are populated with Star Wars RPG skills.
+
+```
+let skills = [];
+let characteristics = [];
+skills.push(monster.astrogation,monster.athletics,monster.brawl, monster.charm,monster.coercion,monster.computers, monster.cool,monster.coordination,monster.cybernetics, monster.deception,monster.discipline, monster.gunnery, monster.coreworlds, monster.education, monster.lore, monster.outerrim, monster.underworld, monster.warfare, monster.xenology, monster.leadership, monster.lightsaber, monster.mechanics, monster.medicine, monster.melee, monster.negotiation, monster.perception, monster.pplanetary, monster.pspace, monster.rheavy, monster.rlight, monster.resilience, monster.skulduggery, monster.stealth, monster.streetwise, monster.survival, monster.vigilance);
+characteristics.push (monster.stats[2], monster.stats[0], monster.stats[0], monster.stats[5], monster.stats[4], monster.stats[2], monster.stats[5], monster.stats[1], monster.stats[2], monster.stats[3], monster.stats[4], monster.stats[1], monster.stats[2], monster.stats[2], monster.stats[2], monster.stats[2], monster.stats[2], monster.stats[2], monster.stats[2], monster.stats[5], monster.stats[0], monster.stats[2], monster.stats[2], monster.stats[0], monster.stats[5], monster.stats[3], monster.stats[1], monster.stats[1], monster.stats[1], monster.stats[1], monster.stats[0], monster.stats[3], monster.stats[1], monster.stats[3], monster.stats[3], monster.stats[4]);
+```
+
+Any of the above skills can be changed/tweaked to fit your game. The characteristics array is as presented in the statblock render; [brw, agi, int, cun, wil, pre], and needs to match the same array location as the appropriate skill. E.g. if you edit the first skill, the first entry in the characteristics array needs to match the appropriate stat for that skill. I.e. astrogation uses int, so the first entry in the characteristics array is monster.stats[2] (int). 
