@@ -7,7 +7,7 @@ This is a Statblock Layout for the TTRPG Statblocks plugin for Obsidian. It requ
 * Health calculations for type minion quantity (minion)
 
 ## To install
-1. Download [this json](https://github.dev/Craftidore/Obsidian-Genesys/blob/TTRPG-Stablock-Layout/TTRPG-Statblock-Layout/jsons/Genesys%20_%20Star%20Wars%20RPG.json).
+1. Download [this json](https://raw.githubusercontent.com/Craftidore/Obsidian-Genesys/master/TTRPG-Statblock-Layout/jsons/Genesys%20_%20Star%20Wars%20RPG.json).
 2. In the TTRPG Statblocks plugin settings, select 'Import from JSON,' and select the downloaded json file.
 
 # Usage
