@@ -13,4 +13,5 @@ If you want to see it in action, <a href="https://github.com/Craftidore/Obsidian
 
 ## Star Wars and Genesys TTRPG Statblock Layout
 
+Star Wars/Genesys TTRPG Statblock Layout for the TTRPG Statblock Plugin created by [Toad_](https://github.com/source-toad).
 More info can be found [here](https://github.com/Craftidore/Obsidian-Genesys/tree/master/TTRPG-Statblock-Layout)
