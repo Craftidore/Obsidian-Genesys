@@ -1,0 +1,40 @@
+@use './variables-multiples.scss';
+
+@mixin formatting($game) {
+    @each $dors in variables-multiples.$diceandsymbols {
+        @each $number in variables-multiples.$count {
+                        
+            body a.tag.tag[href^="##{$game}#{$dors}#{$number}"], 
+            #{variables-multiples.$lp} .cm-tag-#{$game}#{$dors}#{$number}:not(.cm-formatting) {
+                /* Taken from original CSS */
+                display: inline-flex;
+                align-self: center;
+                top: .175em;
+                position: relative;
+                height: 1em;
+                width: unquote("#{$number}.#{$number}em");
+                border: 0;
+                /* Added to try and deal with themes - test*/
+                font-size: var(--editor-font-size);
+                padding: 1px;
+                border-radius: 0;
+                vertical-align: baseline;
+            }
+            #{variables-multiples.$lp} .cm-formatting.cm-tag#{$game}#{$dors}#{$number} {
+                display: none;
+            }
+        }
+    }
+}
+@mixin darkthemefixes($game) {
+    @each $symbol in variables-multiples.$symbols {
+        @each $number in variables-multiples.$count {
+            .theme-dark:not(.do-not-invert-symbols-#{$game}) {
+                a.tag.tag[href^="##{$game}#{$symbol}#{$number}"],
+                .is-live-preview .cm-line:not(.cm-active) .cm-tag-#{$game}#{$symbol}#{$number}:not(.cm-formatting) {
+                    filter: invert(1);
+                }
+            }
+        }
+    }
+}

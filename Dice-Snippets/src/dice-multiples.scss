@@ -1,0 +1,16 @@
+@use './variables-multiples';
+
+@mixin diceandsymbols($game, $diceandsymbols_pic_dict) {
+    //$dors = dice_or_symbol
+    @each $dors, $dors_pic in $diceandsymbols_pic_dict {
+        @each $number in variables-multiples.$count {        
+            body a.tag.tag[href^="##{$game}#{$dors}#{$number}"],
+            #{variables-multiples.$lp} .cm-tag-#{$game}#{$dors}#{$number}:not(.cm-formatting) {
+                content: url("data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=");
+                background: url("#{$dors_pic}");
+                background-size: 1em;
+                background-repeat: space;
+            }
+        }    
+    }
+}
