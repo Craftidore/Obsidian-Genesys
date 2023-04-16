@@ -23,7 +23,7 @@ The Genesys / Star Wars RPG Layout includes the following sections:
 * image
 * characteristics (stats)
 * stats (property)
-* talents (talents)
+* talents (traits)
 * skills (property)
 * abilities (traits)
 * equipment (traits)
@@ -40,8 +40,6 @@ Skills will only render if they are included in the YAML. Including skill: 0 (nu
 ```statblock
 layout: Star Wars RPG
 image: https://static.wikia.nocookie.net/starwars/images/c/ca/Anovos_Stormtrooper.png/revision/latest/top-crop/width/360/height/360?cb=20160407220950
-diceprof: "#StarWarsProficiency" OR "GenesysProficiency"
-diceability: "#StarWarsAbility" OR "#GenesysAbility"
 monster: Imperial Stormtrooper
 qty: 3
 name: Imperial Stormtrooper
