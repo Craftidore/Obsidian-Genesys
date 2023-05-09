@@ -5,6 +5,7 @@ This is a Statblock Layout for the TTRPG Statblocks plugin for Obsidian. It requ
 * Dice Pool calculations for primary skills (nemesis / rivals)
 * Dice Pool skill calculations for type minion quantity (minion)
 * Health calculations for type minion quantity (minion)
+* Interactive wounds counter which adjusts minion dice pools.
 
 ## To install
 1. Download [this json](https://raw.githubusercontent.com/Craftidore/Obsidian-Genesys/master/TTRPG-Statblock-Layout/jsons/Genesys%20_%20Star%20Wars%20RPG.json).
