@@ -38,13 +38,12 @@ Skills will only render if they are included in the YAML. Including skill: 0 (nu
 
 ````
 ```statblock
-layout: Star Wars RPG
-image: https://static.wikia.nocookie.net/starwars/images/c/ca/Anovos_Stormtrooper.png/revision/latest/top-crop/width/360/height/360?cb=20160407220950
-monster: Imperial Stormtrooper
-qty: 3
 name: Imperial Stormtrooper
-type: Minion
+monster: Imperial Stormtrooper
 desc: Standard Imperial Canonfodder
+qty: 3
+image: https://static.wikia.nocookie.net/starwars/images/c/ca/Anovos_Stormtrooper.png/revision/latest/top-crop/width/360/height/360?cb=20160407220950
+type: Minion
 soak: 5
 wounds: 5
 strain: null
@@ -59,7 +58,8 @@ equipment:
   - name: Blaster Rifle
     desc: Ranged Heavy, Damage +9, Critical 3, Long Range, Stun
   - name: Light repeating blaster
-    desc: Ranged Heavy, Damage +11, Critical 3, Long Range, Auto-fire, Cumbersome 4, Pierce 1, Weapon Sling.
+    desc: Ranged Heavy, Damage +11, Critical 3, Long Range, Auto-fire, Cumbersome 4,
+      Pierce 1, Weapon Sling.
   - name: Vibro Knife
     desc: Melee, Damage +4, Crit 2, Engaged, Pierce 2, Vicious 1
   - name: Frag Grenade

@@ -1,75 +1,76 @@
 ```statblock
-monster: Creature
-name: Creature
-type: Nemesis
-diceprof: "#StarWarsProficiency"
-diceability: "#StarWarsAbility"
-image: image here
-stats: [1,2,5,3,2,2]
-qty: 3
-soak: 2
-wounds: 15
-strain: 15
-rdef: 0
-mdef: 0
-astrogation: 0
-athletics: 0
-brawl: 0
-charm: 0
-coercion: 0
-computers: 0
-cool: 0
-coordination: 0
-cybernetics: 0
-deception: 0
-discipline: 0
-gunnery: 0
-coreworlds: 0
-education: 0
-lore: 0
-outerrim: 0
-underworld: 0
-warfare: 0
-xenology: 0
-leadership: 0
-lightsaber: 0
-mechanics: 0
-medicine: 0
-melee: 0
-negotiation: 0
-perception: 0
-pplanetary: 0
-pspace: 0
-rheavy: 0
-rlight: 0
-resilience: 0
-skulduggery: 0
-stealth: 0
-streetwise: 0
-survival: 0
-vigilance: 0
-abilities:
-- name: Name of Ability
-  desc: Description of Ability
-- name: Name of Ability
-  desc: Description of Ability
-equipment:
- - name: Name of Equipment
-   desc: Description of Equipment
- - name: Name of Equipment
-   desc: Description of Equipment
+layout: Genesys
+monster: string
+name: string
+type: nemesis/rival/minion
+desc: string
+qty: int
+stats: [brw,agi,int,cun,wil,pre]
+soak: int
+wounds: int
+strain: int
+rdef: int
+mdef: int
+astrogation: int
+athletics: int
+brawl: int
+charm: int
+coercion: int
+computers: int
+cool: int
+coordination: int
+cybernetics: int
+deception: int
+discipline: int
+gunnery: int
+coreworlds: int
+education: int
+lore: int
+outerrim: int
+underworld: int
+warfare: int
+xenology: int
+leadership: int
+lightsaber: int
+mechanics: int
+medicine: int
+melee: int
+negotiation: int
+perception: int
+pilotingplanetary: int
+pilotingspace: int
+rangedheavy: int
+rangedlight: int
+resilience: int
+skulduggery: int
+stealth: int
+streetwise: int
+survival: int
+vigilance: int
+talents:
+ - name: string
+   desc: string
+equipment: 
+ - name: string
+   desc: string
+ - name: string
+   desc: string
+abilities: 
+ - name: string
+   desc: string
+ - name: string
+   desc: string
 ```
 
+
 ```statblock
-layout: Star Wars RPG
-image: https://static.wikia.nocookie.net/starwars/images/c/ca/Anovos_Stormtrooper.png/revision/latest/top-crop/width/360/height/360?cb=20160407220950
-diceprof: "#StarWarsProficiency"
-diceability: "#StarWarsAbility"
-monster: Imperial Stormtrooper
-qty: 3
+layout: Genesys
 name: Imperial Stormtrooper
-type: Minion
+monster: Imperial Stormtrooper
 desc: Standard Imperial Canonfodder
+qty: 3
+image: https://static.wikia.nocookie.net/starwars/images/c/ca/Anovos_Stormtrooper.png/revision/latest/top-crop/width/360/height/360?cb=20160407220950
+type: Minion
 soak: 5
 wounds: 5
 strain: null
