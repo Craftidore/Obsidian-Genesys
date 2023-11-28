@@ -1,3 +1,14 @@
+.statblock[class*=genesys] .statblock-content-container {
+	columns: 2;
+	column-width: 325px;
+	column-height: 300px;
+}
+
+.statblock[class*=genesys] .bar {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
 .statblock[class*=genesys] .collapse-container summary {
 	margin-bottom: 0rem !important;
 	min-height: 0rem !important;
@@ -9,9 +20,13 @@
 	line-height: 100%;
 }
 
+.statblock[class*=genesys] h3 {
+	font-size: 16px !important;
+	color: var(--statblock-heading-font-color);
+}
+
 .statblock[class*=genesys] .flex-container {
 	justify-content: center;	
-	width: 100%;
 }
 
 .statblock[class*=genesys] .group-container {
