@@ -16,9 +16,10 @@
 }
 
 .statblock[class*=genesys] h3 {
-	font-size: 16px !important;
+	font-size: 14px !important;
+	font: var(--h2-font);
 	color: var(--statblock-heading-font-color);
-}
+}	
 
 .statblock[class*=genesys] h6 {
 	text-align: center !important;
@@ -253,3 +254,6 @@ button:not(.clickable-icon) {
     background-size: 1em;
     background-repeat: space;
 }
+
+
+

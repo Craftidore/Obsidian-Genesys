@@ -1,0 +1,13 @@
+.statblock[class*=vehicle] .flex-container {
+	justify-content: center;
+}
+
+.statblock[class*=vehicle] .line {
+	justify-content: center;
+	display: flex;
+}
+
+.statblock[class*=vehicle] img {
+	clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);	
+
+}

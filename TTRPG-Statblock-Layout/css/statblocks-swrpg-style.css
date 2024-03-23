@@ -99,3 +99,26 @@
 	font-weight: bold;
 	font-family: 'Willow Body';
 }
+
+/* ADDITIONAL STYLING ADJUSTMENTS FOR VEHICLE ONLY */
+.statblock[class*=vehicle] img {
+	
+}
+
+.statblock[class*=vehicle] .flex-container {
+	margin-left: 10px;
+	margin-right: 10px;
+	
+}
+
+.statblock[class*=vehicle] .property-container {
+	justify-content: left;
+	display: flex;
+}
+
+.statblock[class*=vehicle] .table-item .property-text {
+	background: none;
+	border: none;
+	display: flex;
+	justify-content: center;
+}
