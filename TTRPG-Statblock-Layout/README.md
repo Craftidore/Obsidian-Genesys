@@ -8,7 +8,7 @@ This is a Statblock Layout for the TTRPG Statblocks plugin for Obsidian. It requ
 * Interactive wounds counter which adjusts minion dice pools.
 
 ## To install
-1. Download Genesys.json.
+1. Download your desired .json file.
 2. In the TTRPG Statblocks plugin settings, select 'Import from JSON,' and select the downloaded json file.
 
 # Usage

@@ -1,3 +1,7 @@
+/* THIS STYLE REQUIRES ITS STYLED STATBLOCKS TO BE DISABLED */
+
+/* GENERAL ADJUSTMENTS */
+
 .statblock[class*=genesys] .statblock-content {
 	color: #0A162B;
 	border: #010200;
@@ -7,50 +11,17 @@
 	font-family: 'Inter';
 }
 
-.statblock[class*=genesys] .statblock-content-container {
-}
-
+/* COLOURING & SHAPES ADJUSTMENTS */
+/*Bar*/
 .statblock[class*=genesys] .bar {
 	background: #7B0F13;
-	margin: 0px;
 }
 
+/* CHARACTERISTICS TABLE ADJUSTMENTS */
 .statblock[class*=genesys] .statblock-table {
 	background: #BDAD9C;
 	clip-path: polygon(5% 0, 95% 0, 100% 40%, 100% 80%, 95% 100%, 5% 100%, 0% 80%, 0 40%);
 	padding: 5px;
-}
-
-.statblock[class*=genesys] img {
-	border-radius: 0px;
-	border: none;
-	height: 150%;
-	clip-path: polygon(3% 0, 7% 1%, 11% 0%, 16% 2%, 20% 0, 23% 2%, 28% 2%, 32% 1%, 35% 1%, 39% 3%, 41% 1%, 45% 0%, 47% 2%, 50% 2%, 53% 0, 58% 2%, 60% 2%, 63% 1%, 65% 0%, 67% 2%, 69% 2%, 73% 1%, 76% 1%, 79% 0, 82% 1%, 85% 0, 87% 1%, 89% 0, 92% 1%, 96% 0, 98% 3%, 99% 3%, 99% 6%, 100% 11%, 98% 15%, 100% 21%, 99% 28%, 100% 32%, 99% 35%, 99% 40%, 100% 43%, 99% 48%, 100% 53%, 100% 57%, 99% 60%, 100% 64%, 100% 68%, 99% 72%, 100% 75%, 100% 79%, 99% 83%, 100% 86%, 100% 90%, 99% 94%, 99% 98%, 95% 99%, 92% 99%, 89% 100%, 86% 99%, 83% 100%, 77% 99%, 72% 100%, 66% 98%, 62% 100%, 59% 99%, 54% 99%, 49% 100%, 46% 98%, 43% 100%, 40% 98%, 38% 100%, 35% 99%, 31% 100%, 28% 99%, 25% 99%, 22% 100%, 19% 99%, 16% 100%, 13% 99%, 10% 99%, 7% 100%, 4% 99%, 2% 97%, 1% 97%, 0% 94%, 1% 89%, 0% 84%, 1% 81%, 0 76%, 0 71%, 1% 66%, 0% 64%, 0% 61%, 0% 59%, 1% 54%, 0% 49%, 1% 45%, 0% 40%, 1% 37%, 0% 34%, 1% 29%, 0% 23%, 2% 20%, 1% 17%, 1% 13%, 0 10%, 1% 6%, 1% 3%);
-	object-position: center 30%;
-}
-
-.statblock[class*=genesys] .image {
-	width: 100%;
-}
-
-.statblock[class*=genesys] .image-container {
-}
-
-.statblock[class*=genesys] h1 {
-	font-family: 'Inter';
-	color: white;
-	background: #781113;
-	padding-left: 20px;
-	padding-right: 20px;
-	clip-path: polygon(5% 0, 95% 0, 100% 40%, 100% 80%, 95% 100%, 5% 100%, 0% 80%, 0 40%);
-	-webkit-text-stroke-color: black;
-	-webkit-text-stroke-width: 1px;
-}
-
-.statblock[class*=genesys] .subheading {
-	color: black;
-	font-size: 12pt;
-	font-family: 'Willow Body';
 }
 
 .statblock[class*=genesys] .statblock-table-header {
@@ -79,11 +50,27 @@
 	font-family: 'Willow Body';
 }
 
-.statblock[class*=genesys] .statblock-javascript {
-	display: block;
-	-webkit-column-break-inside: avoid;
-	padding: 3px;
+/* IMAGE BANNER ADJUSTMENTS */
+.statblock[class*=genesys] img {
+	clip-path: polygon(3% 0, 7% 1%, 11% 0%, 16% 2%, 20% 0, 23% 2%, 28% 2%, 32% 1%, 35% 1%, 39% 3%, 41% 1%, 45% 0%, 47% 2%, 50% 2%, 53% 0, 58% 2%, 60% 2%, 63% 1%, 65% 0%, 67% 2%, 69% 2%, 73% 1%, 76% 1%, 79% 0, 82% 1%, 85% 0, 87% 1%, 89% 0, 92% 1%, 96% 0, 98% 3%, 99% 3%, 99% 6%, 100% 11%, 98% 15%, 100% 21%, 99% 28%, 100% 32%, 99% 35%, 99% 40%, 100% 43%, 99% 48%, 100% 53%, 100% 57%, 99% 60%, 100% 64%, 100% 68%, 99% 72%, 100% 75%, 100% 79%, 99% 83%, 100% 86%, 100% 90%, 99% 94%, 99% 98%, 95% 99%, 92% 99%, 89% 100%, 86% 99%, 83% 100%, 77% 99%, 72% 100%, 66% 98%, 62% 100%, 59% 99%, 54% 99%, 49% 100%, 46% 98%, 43% 100%, 40% 98%, 38% 100%, 35% 99%, 31% 100%, 28% 99%, 25% 99%, 22% 100%, 19% 99%, 16% 100%, 13% 99%, 10% 99%, 7% 100%, 4% 99%, 2% 97%, 1% 97%, 0% 94%, 1% 89%, 0% 84%, 1% 81%, 0 76%, 0 71%, 1% 66%, 0% 64%, 0% 61%, 0% 59%, 1% 54%, 0% 49%, 1% 45%, 0% 40%, 1% 37%, 0% 34%, 1% 29%, 0% 23%, 2% 20%, 1% 17%, 1% 13%, 0 10%, 1% 6%, 1% 3%);
 }
+
+/* HEADER ADJUSTMENTS */
+
+.statblock[class*=genesys] h1 {
+	font-family: 'Inter';
+	color: white;
+	background: #781113;
+	clip-path: polygon(5% 0, 95% 0, 100% 40%, 100% 80%, 95% 100%, 5% 100%, 0% 80%, 0 40%);
+}
+
+.statblock[class*=genesys] .subheading {
+	color: black;
+	font-size: 12pt;
+	font-family: 'Willow Body';
+}
+
+/* DICE BLOCK ADJUSTMENTS */
 
 .statblock[class*=genesys] .statblock-javascript #div_dicecontainer {
 	background: #8CAAA4;
@@ -96,20 +83,11 @@
 	margin: 3px;
 }
 
-.statblock[class*=genesys] .statblock-javascript #div_soak {
-	
-}
-
-.statblock[class*=genesys] .statblock-javascript #div_statcontainer {
-	display: block !important;
-	padding-left: 10px;
-	padding-right: 10px;
-}
+/* STATS BLOCK ADJUSTMENTS */
 
 .statblock[class*=genesys] .statblock-javascript #div_statcontainer #div_stat {
 	background: #313E53;
 	color: white;
-	font-size: 14px;
   	display: flex;
 	justify-content: center;
 	padding-left: 4px;
@@ -117,39 +95,7 @@
 	clip-path: polygon(10% 0, 90% 0, 100% 30%, 100% 70%, 90% 100%, 10% 100%, 0% 70%, 0% 30%);
 }
 
-.statblock[class*=genesys] .statblock-javascript #div_statcontainer #div_button #decreasebuttons {
-	float: left;
-	box-shadow: none;
-}
-
-.statblock[class*=genesys] .statblock-javascript #div_statcontainer #div_button #increasebuttons {
-	float: right;
-}
-
-.statblock[class*=genesys] .statblock-javascript #div_statcontainer #div_button {
-	justify-content: center;
-	width: 100%;
-}
-
 .statblock[class*=genesys] .statblock-javascript #div_statcontainer #div_button #span_stat {
 	font-weight: bold;
 	font-family: 'Willow Body';
 }
-
-.statblock[class*=genesys] .statblock-javascript #div_allstats {
-	display: flex;
-	justify-content: center;
-}
-
-button:not(.clickable-icon) { 
-	box-shadow: none;
-}
-
-.statblock[class*=genesys] a.tag.tag {
-	filter: none !important;
-}
-
-
-
-
-	
