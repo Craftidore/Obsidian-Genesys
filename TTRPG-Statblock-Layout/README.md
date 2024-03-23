@@ -9,7 +9,9 @@ This is a Statblock Layout for the TTRPG Statblocks plugin for Obsidian. It requ
 
 ## To install
 1. Download your desired .json file.
-2. In the TTRPG Statblocks plugin settings, select 'Import from JSON,' and select the downloaded json file.
+2. Download the relevant CSS files (minimum essentials required for statblock styling, SWRPG styling optional).
+3. In the TTRPG Statblocks plugin settings, select 'Import from JSON,' and select the downloaded json file.
+4. Turn on CSS styling in Appearance settings.
 
 # Usage
 A statblock may be defined in a note using the syntax below. Please refer to the TTRPG Statblocks README for general guidance.
