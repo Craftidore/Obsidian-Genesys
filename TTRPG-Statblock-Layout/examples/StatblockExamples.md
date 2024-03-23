@@ -65,32 +65,27 @@ abilities:
 
 ```statblock
 layout: Genesys
-name: Imperial Stormtrooper
-monster: Imperial Stormtrooper
-desc: Standard Imperial Canonfodder
-qty: 3
-image: https://static.wikia.nocookie.net/starwars/images/c/ca/Anovos_Stormtrooper.png/revision/latest/top-crop/width/360/height/360?cb=20160407220950
-type: Minion
-soak: 5
-wounds: 5
-strain: null
+monster: Stalking Acklay
+name: Stalking Acklay
+image: https://lumiere-a.akamaihd.net/v1/images/databank_acklay_01_169_e544124f.jpeg?region=0%2C0%2C1560%2C878
+type: Nemesis
+qty: 1
+stats: [5,3,1,3,3,1]
+soak: 12
+wounds: 25
+strain: 15
 rdef: 0
-mdef: 0
-stats: [3,3,2,2,3,1]
-athletics: null
-discipline: null
-melee: null
-rheavy: null
-equipment:
-  - name: Blaster Rifle
-    desc: Ranged Heavy, Damage +9, Critical 3, Long Range, Stun
-  - name: Light repeating blaster
-    desc: Ranged Heavy, Damage +11, Critical 3, Long Range, Auto-fire, Cumbersome 4,
-      Pierce 1, Weapon Sling.
-  - name: Vibro Knife
-    desc: Melee, Damage +4, Crit 2, Engaged, Pierce 2, Vicious 1
-  - name: Frag Grenade
-    desc: Ranged Light, Damage +8, Crit 4, Short Range, Blast 6, Limited Ammo 1
-  - name: Extra Gear
-    desc: Utility belt, Extra reloads, Stormtrooper armor, 2 frag grenades
+mdef: 2
+athletics: 4
+brawl: 4
+coordination: 2
+talentranks:
+ - name: Adversary 1
+ - name: Silhouette 2
+extends:
+ - Adversary
+ - Large claws
+ - Amphibious
+ - Many-armed
+ - Silhouette
 ```
