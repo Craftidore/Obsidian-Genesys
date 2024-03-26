@@ -17,6 +17,11 @@
 	background: #7B0F13;
 }
 
+/*Icons*/
+.statblock a {
+	filter: none !important;
+}
+
 /* CHARACTERISTICS TABLE ADJUSTMENTS */
 .statblock[class*=genesys] .statblock-table {
 	background: #BDAD9C;
