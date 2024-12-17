@@ -1,4 +1,4 @@
-/* THIS STYLE REQUIRES ITS STYLED STATBLOCKS TO BE DISABLED */
+/* THIS STYLE REQUIRES I.T.S STYLED STATBLOCKS TO BE DISABLED */
 
 /* GENERAL ADJUSTMENTS */
 
@@ -40,14 +40,14 @@
 	clip-path: polygon(10% 0, 90% 0, 100% 30%, 100% 70%, 90% 100%, 10% 100%, 0% 70%, 0% 30%);
 }
 
-.statblock[class*=genesys] .table-item .property-text {
+.statblock[class*=genesys] .table-item .statblock-markdown {
 	display: block;
 	background: white;
 	border-radius: 50%;
 	padding: 3px;
 	text-align: center;
 	font-size: 16px;
-	width: 42px;
+	min-width: 42px;
 	line-height: 30px;
         border: 4px solid #000;
 	border-style: double;
@@ -84,8 +84,21 @@
 
 .statblock[class*=genesys] .statblock-javascript #div_dicecontainer {
 	background: #8CAAA4;
-	clip-path: polygon(5% 0, 95% 0, 100% 50%, 95% 100%, 5% 100%, 0 50%);
-	margin: 3px;
+	clip-path: polygon(3% 0, 98% 0, 100% 50%, 98% 100%, 3% 100%, 0 50%);
+	margin: 2px;
+	height: 100%;
+	text-align: center;
+}
+
+.statblock[class*=genesys] .statblock-javascript #div_dicecontainer strong {
+	font-size: 8.7pt;
+	padding-right: 3px;
+	vertical-align: text-bottom;
+}
+
+.statblock[class*=genesys] .statblock-javascript #div_dicePools {
+	columns: 2;
+	column-gap: 2px;
 }
 
 /* STATS BLOCK ADJUSTMENTS */
@@ -104,6 +117,7 @@
 	font-weight: bold;
 	font-family: 'Willow Body';
 }
+
 
 /* ADDITIONAL STYLING ADJUSTMENTS FOR VEHICLE ONLY */
 .statblock[class*=vehicle] img {
@@ -126,4 +140,19 @@
 	border: none;
 	display: flex;
 	justify-content: center;
+}
+
+/* ADDITIONAL STYLING ADJUSTMENTS FOR PLANTS ONLY */
+.statblock[class*=plant] .table-item .statblock-markdown {
+	border: none;
+	background: none;
+	padding: 0px;
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: normal;
+	font-family: 'Willow Body';
+}
+
+.statblock[class*=plant] .statblock-table-header {
+	width: 70px;
 }
