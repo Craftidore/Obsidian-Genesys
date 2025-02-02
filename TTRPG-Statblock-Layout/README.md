@@ -1,10 +1,11 @@
 # Genesys / Star Wars RPG Statblocks (TTRPG Statblocks)
-This is a Statblock Layout for the TTRPG Statblocks plugin for Obsidian. It requires both the plugin and one of Craftidore's dice snippets to be installed. 
+This is a Statblock Layout for the TTRPG Statblocks plugin for Obsidian. It does not require Craftidore's dice snippet to be installed.
 
 ## Features / Functionalities
-* Dice Pool calculations for primary skills (nemesis / rivals)
-* Dice Pool skill calculations for type minion quantity (minion)
-* Health calculations for type minion quantity (minion)
+* Dice Pool calculations for primary skills (nemesis / rivals).
+* Dice Pool rolling for skills (requires Dice Roller plugin to be installed).
+* Dice Pool skill calculations for type minion quantity (minion).
+* Health calculations for type minion quantity (minion).
 * Interactive wounds counter which adjusts minion dice pools.
 
 ## To install
@@ -41,9 +42,9 @@ Skills will only render if they are included in the YAML. Including skill: 0 (nu
 
 ````
 ```statblock
+layout: Genesys
 name: Imperial Stormtrooper
-monster: Imperial Stormtrooper
-desc: Standard Imperial Canonfodder
+creature: Imperial Stormtrooper Demo
 qty: 3
 image: https://static.wikia.nocookie.net/starwars/images/c/ca/Anovos_Stormtrooper.png/revision/latest/top-crop/width/360/height/360?cb=20160407220950
 type: Minion
@@ -53,33 +54,22 @@ strain: null
 rdef: 0
 mdef: 0
 stats: [3,3,2,2,3,1]
-athletics: null
 discipline: null
 melee: null
-rheavy: null
+rangedheavy: null
+rangedlight: null
+athletics: null
+coordination: null
 equipment:
-  - name: Blaster Rifle
-    desc: Ranged Heavy, Damage +9, Critical 3, Long Range, Stun
-  - name: Light repeating blaster
-    desc: Ranged Heavy, Damage +11, Critical 3, Long Range, Auto-fire, Cumbersome 4,
-      Pierce 1, Weapon Sling.
-  - name: Vibro Knife
-    desc: Melee, Damage +4, Crit 2, Engaged, Pierce 2, Vicious 1
-  - name: Frag Grenade
-    desc: Ranged Light, Damage +8, Crit 4, Short Range, Blast 6, Limited Ammo 1
-  - name: Extra Gear
-    desc: Utility belt, Extra reloads, Stormtrooper armor, 2 frag grenades
+ - name: Blaster Rifle
+   desc: "Ranged Heavy, Damage +9, Critical 3, Long Range, Stun"
+ - name: Light Repeating Blaster
+   desc: "Ranged Heavy, Damage +11, Critical 3, Long Range, Auto-fire, Cumbersome 4, Pierce 1, Weapon Sling."
+ - name: Vibro Knife
+   desc: "Melee, Damage +4, Crit 2, Engaged, Pierce 2, Vicious 1"
+ - name: Frag Grenade
+   desc: "Ranged Light, Damage +8, Crit 4, Short Range, Blast 6, Limited Ammo 1"
+ - name: Extra Gear
+   desc: "Utility belt, Extra reloads, Stormtrooper armor, 2 frag grenades"
 ```
 ````
-
-## Editing Skills
-Using the inbuilt TTRPG Statblock layout editor, all aspects of the layout can be adjusted, including skills. Currently, the dice pool calculations use parallel arrays, and are populated with Star Wars RPG skills.
-
-```
-let skills = [];
-let characteristics = [];
-skills.push(monster.astrogation,monster.athletics,monster.brawl, monster.charm,monster.coercion,monster.computers, monster.cool,monster.coordination,monster.cybernetics, monster.deception,monster.discipline, monster.gunnery, monster.coreworlds, monster.education, monster.lore, monster.outerrim, monster.underworld, monster.warfare, monster.xenology, monster.leadership, monster.lightsaber, monster.mechanics, monster.medicine, monster.melee, monster.negotiation, monster.perception, monster.pplanetary, monster.pspace, monster.rheavy, monster.rlight, monster.resilience, monster.skulduggery, monster.stealth, monster.streetwise, monster.survival, monster.vigilance);
-characteristics.push (monster.stats[2], monster.stats[0], monster.stats[0], monster.stats[5], monster.stats[4], monster.stats[2], monster.stats[5], monster.stats[1], monster.stats[2], monster.stats[3], monster.stats[4], monster.stats[1], monster.stats[2], monster.stats[2], monster.stats[2], monster.stats[2], monster.stats[2], monster.stats[2], monster.stats[2], monster.stats[5], monster.stats[0], monster.stats[2], monster.stats[2], monster.stats[0], monster.stats[5], monster.stats[3], monster.stats[1], monster.stats[1], monster.stats[1], monster.stats[1], monster.stats[0], monster.stats[3], monster.stats[1], monster.stats[3], monster.stats[3], monster.stats[4]);
-```
-
-Any of the above skills can be changed/tweaked to fit your game. The characteristics array is as presented in the statblock render; [brw, agi, int, cun, wil, pre], and needs to match the same array location as the appropriate skill. E.g. if you edit the first skill, the first entry in the characteristics array needs to match the appropriate stat for that skill. I.e. astrogation uses int, so the first entry in the characteristics array is monster.stats[2] (int). 

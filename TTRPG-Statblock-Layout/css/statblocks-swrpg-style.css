@@ -67,6 +67,7 @@
 	color: white;
 	background: #781113;
 	clip-path: polygon(5% 0, 95% 0, 100% 40%, 100% 80%, 95% 100%, 5% 100%, 0% 80%, 0 40%);
+	shadow: none;
 }
 
 .statblock[class*=genesys] .subheading {
@@ -75,34 +76,14 @@
 	font-family: 'Willow Body';
 }
 
-/* DICE BLOCK ADJUSTMENTS */
-
-.statblock[class*=genesys] .statblock-javascript #div_dicecontainer {
-	background: #8CAAA4;
-	clip-path: polygon(5% 0, 95% 0, 100% 50%, 95% 100%, 5% 100%, 0 50%);
-}
+/* DICE BLOCK ADJUSTMENTS - STYLING */
 
 .statblock[class*=genesys] .statblock-javascript #div_dicecontainer {
 	background: #8CAAA4;
 	clip-path: polygon(3% 0, 98% 0, 100% 50%, 98% 100%, 3% 100%, 0 50%);
-	margin: 2px;
-	height: 100%;
-	text-align: center;
-}
-
-.statblock[class*=genesys] .statblock-javascript #div_dicecontainer strong {
-	font-size: 8.7pt;
-	padding-right: 3px;
-	vertical-align: text-bottom;
-}
-
-.statblock[class*=genesys] .statblock-javascript #div_dicePools {
-	columns: 2;
-	column-gap: 2px;
 }
 
 /* STATS BLOCK ADJUSTMENTS */
-
 .statblock[class*=genesys] .statblock-javascript #div_statcontainer #div_stat {
 	background: #313E53;
 	color: white;
